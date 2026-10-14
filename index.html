@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratory Exercise 6 - Validating Form Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Sign Up</h1>
+  <form id="signupForm" novalidate>
+
+    <div class="field">
+      <small class="error-msg" id="firstNameError"></small>
+      <input type="text" id="firstName" placeholder="First Name">
+    </div>
+
+    <div class="field">
+      <small class="error-msg" id="middleInitialError"></small>
+      <input type="text" id="middleInitial" placeholder="Middle Initial">
+    </div>
+
+    <div class="field">
+      <small class="error-msg" id="lastNameError"></small>
+      <input type="text" id="lastName" placeholder="Last Name">
+    </div>
+
+    <div class="field">
+      <small class="error-msg" id="emailError"></small>
+      <input type="text" id="email" placeholder="Email Address">
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset" id="resetBtn">Reset</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
